@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h2>{{ display }}</h2>
+        <div>
+            <button v-on:click="appendToDisplay('1')">1</button>
+            <button v-on:click="appendToDisplay('2')">2</button>
+            <button v-on:click="appendToDisplay('3')">3</button>
+            <button v-on:click="appendToDisplay('+')">+</button>
+        </div>
+        <div>
+            <button v-on:click="appendToDisplay('4')">4</button>
+            <button v-on:click="appendToDisplay('5')">5</button>
+            <button v-on:click="appendToDisplay('6')">6</button>
+            <button v-on:click="appendToDisplay('-')">-</button>
+        </div>
+        <div>
+            <button v-on:click="appendToDisplay('7')">7</button>
+            <button v-on:click="appendToDisplay('8')">8</button>
+            <button v-on:click="appendToDisplay('9')">9</button>
+            <button v-on:click="appendToDisplay('*')">*</button>
+        </div>
+        <div>
+            <button v-on:click="appendToDisplay('0')">0</button>
+            <button v-on:click="appendToDisplay('.')">.</button>
+            <button v-on:click="clearDisplay">Reset</button>
+            <button v-on:click="calculateResult">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
